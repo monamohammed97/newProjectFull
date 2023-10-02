@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FullStack</title>
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="./libs/bootstrap/bootstrap.min.css">
+  <!-- end -->
+
+  <!-- custom -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <!-- end -->
+
+</head>
+
+<body>
+
+  <main>
+    <section>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+            type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+            material & production planning
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="shop-floor-tab" data-bs-toggle="tab" data-bs-target="#shop-floor-tab-pane"
+            type="button" role="tab" aria-controls="shop-floor-tab-pane" aria-selected="false">
+            shop floor control & manufacturing execut
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="production-tab" data-bs-toggle="tab" data-bs-target="#production-tab-pane"
+            type="button" role="tab" aria-controls="production-tab-pane" aria-selected="false">
+            production engineering
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contract-tab" data-bs-toggle="tab" data-bs-target="#contract-tab-pane"
+            type="button" role="tab" aria-controls="contract-tab-pane" aria-selected="false">
+            purchasing - contract management
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="purchasing-tab" data-bs-toggle="tab" data-bs-target="#purchasing-tab-pane"
+            type="button" role="tab" aria-controls="purchasing-tab-pane" aria-selected="false">
+            purchasing -So
+          </button>
+        </li>
+      </ul>
+      <div class="content-page d-flex flex-wrap-reverse">
+        <div class="tab-content col-12 col-lg-7 col-xl-8" id="myTabContent">
+          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+            <div class="container-card">
+              <div class="box-card">
+                <h5 class="text-uppercase">new production order</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize">machine status</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon2.PNG" alt="icon">
+                    </div>
+                    <span class="number">2</span>
+                  </div>
+                  <p class="text-footer-card mb-0 text-capitalize">
+                    materials with issues, material with Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Expedita temporibus quibusdam odit illo, exercitationem aliquid debitis sunt ipsam cum illum nostrum
+                    dolores, deserunt eos laborum quo similique perspiciatis velit ea.
+                  </p>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-uppercase text-center"> production planning per machine </h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize">worker status</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize">open production order </h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon3.PNG" alt="icon">
+                    </div>
+                    <span class="number">0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize">production order history </h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon4.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-end">print c.o.c</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon4.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-uppercase">production exceptions</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon5.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-gray">manage PIRs</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon6.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-gray">analize PIR quality</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-gray">create PIRs</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-gray">display PIRs</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="shop-floor-tab-pane" role="tabpanel" aria-labelledby="shop-floor-tab"
+            tabindex="0">
+            <div class="container-card">
+              <div class="box-card">
+                <h5 class="text-uppercase">new production order</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize">machine status</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon2.PNG" alt="icon">
+                    </div>
+                    <span class="number">2</span>
+                  </div>
+                  <p class="text-footer-card mb-0 text-capitalize">
+                    materials with issues, material with Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Expedita temporibus quibusdam odit illo, exercitationem aliquid debitis sunt ipsam cum illum nostrum
+                    dolores, deserunt eos laborum quo similique perspiciatis velit ea.
+                  </p>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-uppercase text-center"> production planning per machine </h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize">worker status</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize">open production order </h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon3.PNG" alt="icon">
+                    </div>
+                    <span class="number">0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize">production order history </h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon4.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-end">print c.o.c</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon4.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-uppercase">production exceptions</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon5.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-gray">manage PIRs</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon6.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-gray">analize PIR quality</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-gray">create PIRs</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-gray">display PIRs</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="production-tab-pane" role="tabpanel" aria-labelledby="production-tab"
+            tabindex="0">
+            <div class="container-card">
+              <div class="box-card">
+                <h5 class="text-uppercase">new production order</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize">machine status</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon2.PNG" alt="icon">
+                    </div>
+                    <span class="number">2</span>
+                  </div>
+                  <p class="text-footer-card mb-0 text-capitalize">
+                    materials with issues, material with Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Expedita temporibus quibusdam odit illo, exercitationem aliquid debitis sunt ipsam cum illum nostrum
+                    dolores, deserunt eos laborum quo similique perspiciatis velit ea.
+                  </p>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-uppercase text-center"> production planning per machine </h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize">worker status</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize">open production order </h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon3.PNG" alt="icon">
+                    </div>
+                    <span class="number">0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize">production order history </h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon4.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-end">print c.o.c</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon4.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-uppercase">production exceptions</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon5.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-gray">manage PIRs</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon6.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-gray">analize PIR quality</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-gray">create PIRs</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-gray">display PIRs</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="contract-tab-pane" role="tabpanel" aria-labelledby="contract-tab" tabindex="0">
+            <div class="container-card">
+              <div class="box-card">
+                <h5 class="text-uppercase">new production order</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize">machine status</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon2.PNG" alt="icon">
+                    </div>
+                    <span class="number">2</span>
+                  </div>
+                  <p class="text-footer-card mb-0 text-capitalize">
+                    materials with issues, material with Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Expedita temporibus quibusdam odit illo, exercitationem aliquid debitis sunt ipsam cum illum nostrum
+                    dolores, deserunt eos laborum quo similique perspiciatis velit ea.
+                  </p>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-uppercase text-center"> production planning per machine </h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize">worker status</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize">open production order </h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon3.PNG" alt="icon">
+                    </div>
+                    <span class="number">0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize">production order history </h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon4.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-end">print c.o.c</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon4.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-uppercase">production exceptions</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon5.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-gray">manage PIRs</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon6.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-gray">analize PIR quality</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-gray">create PIRs</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-gray">display PIRs</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="purchasing-tab-pane" role="tabpanel" aria-labelledby="purchasing-tab"
+            tabindex="0">
+            <div class="container-card">
+              <div class="box-card">
+                <h5 class="text-uppercase">new production order</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize">machine status</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon2.PNG" alt="icon">
+                    </div>
+                    <span class="number">2</span>
+                  </div>
+                  <p class="text-footer-card mb-0 text-capitalize">
+                    materials with issues, material with Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Expedita temporibus quibusdam odit illo, exercitationem aliquid debitis sunt ipsam cum illum nostrum
+                    dolores, deserunt eos laborum quo similique perspiciatis velit ea.
+                  </p>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-uppercase text-center"> production planning per machine </h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize">worker status</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize">open production order </h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon3.PNG" alt="icon">
+                    </div>
+                    <span class="number">0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize">production order history </h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon4.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-end">print c.o.c</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon4.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-uppercase">production exceptions</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon5.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-gray">manage PIRs</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon6.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-gray">analize PIR quality</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-gray">create PIRs</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box-card">
+                <h5 class="text-capitalize text-gray">display PIRs</h5>
+                <div class="text-card">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon">
+                      <img src="./images/icon1.PNG" alt="icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="alarm col-12 col-lg-5 col-xl-4">
+          <div class="inner">
+            <div class="d-flex align-items-center mb-3 mb-lg-5">
+              <div class="alarm-img">
+                <img src="./images/alarm.PNG" alt="alarm">
+              </div>
+              <h4 class="text-uppercase d-flex flex-grow-1 justify-content-center">alarm</h4>
+            </div>
+            <ul class="list-unstyled">
+              <li class="text-center text-capitalize">1 ->p.o#45 late on qc stage</li>
+              <li class="text-center text-capitalize">2 ->p.o#63 late on cleaning stage</li>
+              <li class="text-center text-capitalize">3 ->worker mohammad slower than avarage</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- bootstrap -->
+  <script src="./libs/jQuery.js"></script>
+  <script src="./libs/bootstrap/bootstrap.bundle.min.js"></script>
+  <!-- end -->
+
+  <!-- custom -->
+  <script src="./js/script.js"></script>
+
+</body>
+
+</html>

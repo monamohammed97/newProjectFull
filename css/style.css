@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+main {
+  background-image: linear-gradient(#2DA3BC, #195C86);
+  min-height: 100vh;
+}
+
+.nav-tabs {
+  padding: 20px 3rem 0;
+  border-bottom: 2px solid rgba(255, 255, 255, .5);
+  gap: 0 32px;
+
+  .nav-link {
+    border: none !important;
+    padding: 16px 0;
+    position: relative;
+    color: #fff;
+    text-transform: capitalize;
+  }
+
+  .nav-link.active {
+    background-color: transparent;
+    color: #fff;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-image: linear-gradient(to left, #fff 60%, rgba(255, 255, 255, .5));
+      height: 3px;
+      width: 100%;
+      bottom: 0;
+    }
+  }
+}
+
+.content-page {
+  padding: 16px;
+  padding-top: 6px;
+
+  .container-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .box-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    width: calc((100% - 36px)/ 4);
+    min-height: 220px;
+    border-radius: 3px;
+    padding: 8px;
+    transition: all .4s;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 3px 6px #fff;
+      transform: scale(1.02);
+      transition: all .4s;
+    }
+  }
+
+  .text-footer-card {
+    color: #8F9094;
+    /* font-size: 12px; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .text-card {
+    min-height: 64px;
+  }
+
+  .number {
+    font-size: 45px;
+    line-height: 0;
+    font-weight: 500;
+    color: #8F9094;
+  }
+
+  .box-card .icon {
+    width: auto;
+    height: 40px;
+  }
+
+  .alarm {
+    padding-left: 12px;
+
+    .inner {
+      background-color: #fff;
+      border-radius: 3px;
+      height: 100%;
+      padding: 12px 16px;
+    }
+
+    .alarm-img {
+      height: 60px;
+    }
+  }
+}
+
+h5 {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.text-gray {
+  color: #8F9094;
+}
+
+.content-page ul li {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.tab-content>.active {
+  transition: all 300ms;
+}
